@@ -802,56 +802,75 @@
     <!-- ==================== PROJECTS SECTION ==================== -->
     <section id="projects" class="py-20 sm:py-32 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Featured Projects Header -->
             <div data-aos="fade-up" class="mb-10">
                 <span class="text-sm font-mono tracking-wider uppercase" style="color: var(--text-muted);">04 / Work</span>
                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mt-2">
                     Featured <span style="color: var(--text-muted);">Projects</span>
                 </h2>
+                <p class="mt-4 text-base sm:text-lg" style="color: var(--text-muted);">
+                    Passion projects and custom programming languages built from scratch.
+                </p>
             </div>
 
-            <!-- 🎮 BULLETPROOF INDIE GAME SPOTLIGHT CARD 🎮 -->
-            <!-- The entire card is now an <a> tag, guaranteeing redirection anywhere it's clicked -->
-            <a href="https://github.com/DivanshLpu/indie-game" target="_blank" rel="noopener noreferrer" data-aos="fade-up" class="block mb-12 group rounded-3xl overflow-hidden transition-all duration-500 card-shine relative" style="border: 1px solid var(--border); background: linear-gradient(135deg, var(--bg-card-hover), var(--bg-card)); text-decoration: none; color: inherit; cursor: pointer;">
-                
-                <div class="absolute top-4 right-4 z-10">
-                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg" style="background: var(--accent); color: var(--accent-inverse);">
-                        <span class="w-2 h-2 rounded-full animate-pulse" style="background: var(--accent-inverse);"></span>
-                        Pre-Release v0.0.1
-                    </span>
-                </div>
-                
-                <div class="grid md:grid-cols-12 gap-6 p-6 sm:p-10 items-center">
-                    <div class="md:col-span-4 flex justify-center md:justify-start">
-                        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 group-hover:rotate-3 duration-500" style="background: var(--bg-elevated); border: 1px solid var(--border);">
-                            <i class="fas fa-gamepad text-5xl sm:text-6xl" style="color: var(--text-primary);"></i>
-                        </div>
+            <!-- Featured Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                <!-- Featured Project 1: Indie RPG Game -->
+                <a href="https://divanshlpu.github.io/indie-game/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine relative" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="project-visual aspect-video flex items-center justify-center">
+                        <i class="fas fa-gamepad text-6xl" style="color: var(--text-primary); opacity: 0.3;"></i>
                     </div>
-                    <div class="md:col-span-8 text-center md:text-left">
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3 group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Indie Game Project</h3>
-                        <p class="text-base leading-relaxed mb-6" style="color: var(--text-muted);">
-                            Version 0.0.1 is officially out as a pre-release! 🎮 Click anywhere on this card to view, download, and share your valuable feedback on GitHub.
-                        </p>
-                        <div class="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start">
-                            <span class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all group-hover:scale-105" style="background: var(--accent); color: var(--accent-inverse);">
-                                <i class="fab fa-github text-lg"></i>
-                                <span>View & Download on GitHub</span>
-                                <i class="fas fa-arrow-up-right-from-square text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
-                            </span>
-                            <span class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold transition-all" style="border: 1px solid var(--border); color: var(--text-primary);">
-                                <i class="fas fa-comment-dots"></i>
-                                <span>Give Feedback</span>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Indie RPG Game</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
                             </span>
                         </div>
+                        <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">A custom indie RPG game built from scratch. Explore dungeons, battle enemies, and experience classic RPG mechanics with modern touches.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">LÖVE2D</span>
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Lua</span>
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Game Dev</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <!-- END INDIE GAME SPOTLIGHT CARD -->
+                </a>
 
-            <p class="mb-8 max-w-2xl" style="color: var(--text-muted);">Live client projects built and shipped through <span class="font-medium" style="color: var(--text-primary);">Dev Globals</span></p>
+                <!-- Featured Project 2: Gaba Language -->
+                <a href="https://divanshlpu.github.io/gaba/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="100" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine relative" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="project-visual aspect-video flex items-center justify-center">
+                        <i class="fas fa-code text-6xl" style="color: var(--text-primary); opacity: 0.3;"></i>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Gaba Language</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
+                            </span>
+                        </div>
+                        <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">A custom interpreted programming language built on Dart. Features a clean lexer, parser, AST, and runtime execution environment.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Dart</span>
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Compiler Design</span>
+                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Interpreter</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="section-line mb-10"></div>
+
+            <!-- Client Projects Header -->
+            <div data-aos="fade-up" class="mb-8">
+                <h3 class="text-2xl sm:text-3xl font-bold" style="color: var(--text-primary);">Client Projects</h3>
+                <p class="mt-2 text-base" style="color: var(--text-muted);">Live websites built and shipped through <span class="font-medium" style="color: var(--text-primary);">Dev Globals</span></p>
+            </div>
+
+            <!-- Client Projects Grid -->
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Project 1 -->
-                <div data-aos="fade-up" class="group rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border)'">
+                <!-- Project 1: PowerShifter -->
+                <a href="https://powershifter.in" target="_blank" rel="noopener noreferrer" data-aos="fade-up" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
                     <div class="project-visual aspect-video flex items-center justify-center">
                         <svg viewBox="0 0 200 100" class="w-32 h-32" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
                             <rect x="20" y="20" width="60" height="40" rx="5"/><circle cx="35" cy="70" r="10"/><circle cx="65" cy="70" r="10"/>
@@ -861,10 +880,10 @@
                     </div>
                     <div class="p-6 sm:p-8">
                         <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-2xl font-bold transition-colors" style="color: var(--text-primary);">PowerShifter</h3>
-                            <a href="https://powershifter.in/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="border: 1px solid var(--border);" onmouseover="this.style.background='var(--accent)'; this.querySelector('i').style.color='var(--accent-inverse)'" onmouseout="this.style.background='transparent'; this.querySelector('i').style.color='var(--text-primary)'">
-                                <i class="fas fa-arrow-up-right-from-square text-sm" style="color: var(--text-primary);"></i>
-                            </a>
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">PowerShifter</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
+                            </span>
                         </div>
                         <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">WooCommerce store for automotive performance parts, body kits & exterior/interior upgrades.</p>
                         <div class="flex flex-wrap gap-2">
@@ -872,10 +891,10 @@
                             <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">PHP</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 2 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="group rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border)'">
+                <!-- Project 2: Street Gloss -->
+                <a href="https://streetgloss.in" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="100" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
                     <div class="project-visual aspect-video flex items-center justify-center">
                         <svg viewBox="0 0 200 100" class="w-32 h-32" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M100 20 L120 50 L100 80 L80 50 Z"/><circle cx="100" cy="50" r="15"/>
@@ -885,10 +904,10 @@
                     </div>
                     <div class="p-6 sm:p-8">
                         <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-2xl font-bold transition-colors" style="color: var(--text-primary);">Street Gloss</h3>
-                            <a href="https://streetgloss.in/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="border: 1px solid var(--border);" onmouseover="this.style.background='var(--accent)'; this.querySelector('i').style.color='var(--accent-inverse)'" onmouseout="this.style.background='transparent'; this.querySelector('i').style.color='var(--text-primary)'">
-                                <i class="fas fa-arrow-up-right-from-square text-sm" style="color: var(--text-primary);"></i>
-                            </a>
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Street Gloss</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
+                            </span>
                         </div>
                         <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">WooCommerce store for premium car care & detailing products, based in Nakodar, Punjab.</p>
                         <div class="flex flex-wrap gap-2">
@@ -896,10 +915,10 @@
                             <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">CSS</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 3 -->
-                <div data-aos="fade-up" class="group rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border)'">
+                <!-- Project 3: Popli Global -->
+                <a href="https://popliglobal.com" target="_blank" rel="noopener noreferrer" data-aos="fade-up" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
                     <div class="project-visual aspect-video flex items-center justify-center">
                         <svg viewBox="0 0 200 100" class="w-32 h-32" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
                             <ellipse cx="100" cy="80" rx="70" ry="10"/>
@@ -910,10 +929,10 @@
                     </div>
                     <div class="p-6 sm:p-8">
                         <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-2xl font-bold transition-colors" style="color: var(--text-primary);">Popli Global</h3>
-                            <a href="https://popliglobal.com/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="border: 1px solid var(--border);" onmouseover="this.style.background='var(--accent)'; this.querySelector('i').style.color='var(--accent-inverse)'" onmouseout="this.style.background='transparent'; this.querySelector('i').style.color='var(--text-primary)'">
-                                <i class="fas fa-arrow-up-right-from-square text-sm" style="color: var(--text-primary);"></i>
-                            </a>
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Popli Global</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
+                            </span>
                         </div>
                         <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">Export company site for Indian spices, agro products & fresh vegetables for global buyers.</p>
                         <div class="flex flex-wrap gap-2">
@@ -921,10 +940,10 @@
                             <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">MySQL</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 4 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="group rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border)'">
+                <!-- Project 4: Trover Pharmamach -->
+                <a href="https://trovertec.com" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="100" class="group block rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: var(--bg-card); text-decoration: none; color: inherit; cursor: pointer;">
                     <div class="project-visual aspect-video flex items-center justify-center">
                         <svg viewBox="0 0 200 100" class="w-32 h-32" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
                             <circle cx="100" cy="50" r="30"/><circle cx="100" cy="50" r="20"/><circle cx="100" cy="50" r="10"/>
@@ -934,10 +953,10 @@
                     </div>
                     <div class="p-6 sm:p-8">
                         <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-2xl font-bold transition-colors" style="color: var(--text-primary);">Trover Pharmamach</h3>
-                            <a href="https://trovertec.com/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center transition-all" style="border: 1px solid var(--border);" onmouseover="this.style.background='var(--accent)'; this.querySelector('i').style.color='var(--accent-inverse)'" onmouseout="this.style.background='transparent'; this.querySelector('i').style.color='var(--text-primary)'">
-                                <i class="fas fa-arrow-up-right-from-square text-sm" style="color: var(--text-primary);"></i>
-                            </a>
+                            <h3 class="text-2xl font-bold transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Trover Pharmamach</h3>
+                            <span class="w-10 h-10 rounded-full flex items-center justify-center transition-all group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-inverse)]" style="border: 1px solid var(--border); color: var(--text-primary);">
+                                <i class="fas fa-arrow-up-right-from-square text-sm"></i>
+                            </span>
                         </div>
                         <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">Corporate/catalog site for a manufacturer & exporter of pharmaceutical machinery.</p>
                         <div class="flex flex-wrap gap-2">
@@ -945,36 +964,36 @@
                             <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">CSS</span>
                         </div>
                     </div>
-                </div>
-            </div>
+                </a>
 
-            <!-- Featured Large Project -->
-            <div data-aos="fade-up" class="mt-6 group rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: linear-gradient(135deg, var(--bg-card-hover), transparent);" onmouseover="this.style.borderColor='var(--border-hover)'" onmouseout="this.style.borderColor='var(--border)'">
-                <div class="grid md:grid-cols-2 gap-0">
-                    <div class="project-visual aspect-video md:aspect-auto flex items-center justify-center p-8">
-                        <svg viewBox="0 0 200 150" class="w-48 h-48" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="40" y="30" width="40" height="50" rx="3"/><rect x="90" y="40" width="30" height="40" rx="3"/><rect x="130" y="25" width="35" height="60" rx="3"/>
-                            <path d="M30 110 L170 110"/><circle cx="60" cy="120" r="5"/><circle cx="105" cy="120" r="5"/><circle cx="147" cy="120" r="5"/>
-                            <text x="60" y="140" font-size="8" fill="currentColor" stroke="none">NAKODAR</text>
-                        </svg>
-                    </div>
-                    <div class="p-6 sm:p-10 flex flex-col justify-center">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs px-2.5 py-1 rounded-full font-medium" style="background: var(--accent); color: var(--accent-inverse);">Featured</span>
-                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Local Platform</span>
+                <!-- Project 5: Nakodar Online (Wide) -->
+                <a href="https://nakodar.online" target="_blank" rel="noopener noreferrer" data-aos="fade-up" class="group block md:col-span-2 rounded-3xl overflow-hidden transition-all duration-500 card-shine" style="border: 1px solid var(--border); background: linear-gradient(135deg, var(--bg-card-hover), transparent); text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div class="project-visual aspect-video md:aspect-auto flex items-center justify-center p-8">
+                            <svg viewBox="0 0 200 150" class="w-48 h-48" style="color: var(--text-primary); opacity: 0.2;" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="40" y="30" width="40" height="50" rx="3"/><rect x="90" y="40" width="30" height="40" rx="3"/><rect x="130" y="25" width="35" height="60" rx="3"/>
+                                <path d="M30 110 L170 110"/><circle cx="60" cy="120" r="5"/><circle cx="105" cy="120" r="5"/><circle cx="147" cy="120" r="5"/>
+                                <text x="60" y="140" font-size="8" fill="currentColor" stroke="none">NAKODAR</text>
+                            </svg>
                         </div>
-                        <h3 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors" style="color: var(--text-primary);">Nakodar Online</h3>
-                        <p class="leading-relaxed mb-6" style="color: var(--text-muted);">A local web platform dedicated to my hometown, Nakodar, Punjab — connecting the community through a modern digital experience.</p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">WordPress</span>
-                            <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">PHP</span>
+                        <div class="p-6 sm:p-10 flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs px-2.5 py-1 rounded-full font-medium" style="background: var(--accent); color: var(--accent-inverse);">Featured</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">Local Platform</span>
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-bold mb-4 transition-colors group-hover:underline decoration-2 underline-offset-4" style="color: var(--text-primary);">Nakodar Online</h3>
+                            <p class="leading-relaxed mb-6" style="color: var(--text-muted);">A local web platform dedicated to my hometown, Nakodar, Punjab — connecting the community through a modern digital experience.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">WordPress</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full" style="background: var(--bg-card-hover); border: 1px solid var(--border); color: var(--text-muted);">PHP</span>
+                            </div>
+                            <div class="inline-flex items-center gap-3 font-medium transition-all group-hover:gap-4" style="color: var(--text-primary);">
+                                <span>Visit Live Site</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
-                        <a href="https://nakodar.online/" target="_blank" class="inline-flex items-center gap-3 font-medium transition-all" style="color: var(--text-primary);" onmouseover="this.style.gap='1rem'" onmouseout="this.style.gap='0.75rem'">
-                            <span>Visit Live Site</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -1091,7 +1110,7 @@
                     © 2026 Divansh. Crafted with <span style="color: var(--text-primary);">♥</span> and lots of coffee.
                 </p>
                 <p class="text-xs font-mono" style="color: var(--text-faint);">
-                    v2.4 · Built with HTML, CSS & JS
+                    v2.5 · Built with HTML, CSS & JS
                 </p>
             </div>
         </div>
